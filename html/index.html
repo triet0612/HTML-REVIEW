@@ -14,8 +14,8 @@
             Paragraph is created with <span><</span>p> element<br>
             <span><</span>br> is used to defines a line break
             <pre>
-    This is preformated
-        The text will preserve spaces and line breaks
+    This is preformated using <span><</span>pre> element
+            The text will preserve spaces and line breaks
     It also have a fixed-width font
             </pre>
         </p>
@@ -67,6 +67,36 @@
                 <li>External CSS using external .css file</li>
             </ul>
         </p>
-        <p><a href="#">link text using <span><</span>a href="URL" target=""></a>target property used for</p>
+        <p>
+            <a href="#">link text using <span><</span>a href="URL" target=""></a>target attribute have values:<br>
+            <li>_self: open document in the <a href="#">same window, tab</a></li>
+            <li>_blank: open document in <a href="#">new window, tab</a></li>
+            <li>_parent: open document in <a href="#">the parent frame</a></li>
+            <li>_top: open document in <a href="#">full body window</a></li>
+        </p>
+        <p>Link to email using <a href="mailto:example@email.com" title="email">href="mailto:example@email.com</a></p>
+        <p>Links can also have titles like the link above</p>
+        <p>Button as link using inline javascrypt: 
+            <button onclick="document.location='#'">
+                <span><</span>button onclick="document.location='URL'">
+            </button>
+        </p>
+        <p>
+            Can make bookmarks in a page<br>
+            Ex: <a href="#bookmark_1">href="#bookmark_1"</a>
+            will bring you to this element below
+            <p id="bookmark_1">id="bookmark_1"</p>
+        </p>
+        <p>adding images:
+            <span><</span>img src="URL" alt="alternative text" width="" height=""><br>
+            Ex: <img src="https://i.pinimg.com/564x/32/e3/8c/32e38c3dccfc46e382485c8969ff6a7e.jpg" alt="this is Mashu" width="20%" height="auto" usemap="#mash">this is Mashu
+        </p>
+        <p>
+            Image map can reference link in areas within image:<br>
+            Ex: click on Mash's shield to go to her Noble Phantasm Wiki
+        </p>
+        <map name="mash">
+            <area shape="circle" coords="30% 140% 20" href="https://fategrandorder.fandom.com/wiki/Mashu_Kyrielight#Exalted_Impervious_Wall_of_Snowflakes">
+        </map>
     </body>
 </html>
